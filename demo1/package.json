@@ -1,0 +1,28 @@
+{
+    "name": "webpack-demo-tutorial",
+    "version": "1.0.0",
+    "description": "",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "webpack --config webpack.config.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/choiicc/webpack-demo-tutorial.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/choiicc/webpack-demo-tutorial/issues"
+    },
+    "homepage": "https://github.com/choiicc/webpack-demo-tutorial#readme",
+    "devDependencies": {
+        "webpack": "^4.28.4",
+        "webpack-cli": "^3.2.1",
+        "webpack-dev-server": "^3.1.14"
+    },
+    "dependencies": {
+        "lodash": "^4.17.11"
+    }
+}
