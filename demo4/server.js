@@ -6,6 +6,7 @@ const app = express();
 const config = require("./webpack.config.js");
 const compiler = webpack(config);
 
+console.log('1111');
 app.use(webpackDevMiddleware(compiler, {
     publicPath: config.output.publicPath
 }));
