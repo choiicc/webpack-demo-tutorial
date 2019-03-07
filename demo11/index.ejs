@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <script>
+        var flag = ( 'fetch' in window && 'assign' in Object);
+        if(!flag){
+            var scriptEle = document.createElement("script");
+            scriptEle.async = false;
+            scriptEle.src = './polyfilly.bundle.js';
+            document.head.appendChild(scriptEle);
+        }
+    </script>
+</head>
+<body>
+</body>
+</html>
