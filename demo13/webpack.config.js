@@ -20,7 +20,12 @@ module.exports = {
         rules: [
             {
                 test: /\.tsx?$/,
-                use: 'ts-loader',
+                use: {
+                    loader: 'ts-loader',
+                    // 版本不符 ？？
+                    // transpileOnly: true,
+                    // experimentalWatchApi: true
+                },
                 exclude: /node_modules/
             }
         ]
